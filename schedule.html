@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html class="wide" lang="en">
+<html class="wide" lang="en" manifest="cache.manifest">
   <head>
-    <title>Schedule</title>
+    <title>ARAHE2023</title>
+    <script type="text/javascript" src="update_cache.js"></script>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -32,7 +33,7 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="checkForUpdate()">
     <div class="ie-panel">
       <a href="http://windows.microsoft.com/en-US/internet-explorer/"
         ><img
@@ -111,47 +112,35 @@
                         <a class="rd-nav-link" href="index.html">Home</a>
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#">Pages</a>
+                        <a class="rd-nav-link" href="#">Conference</a>
                         <ul class="rd-menu rd-navbar-megamenu">
                           <li class="rd-megamenu-item">
                             <ul class="rd-megamenu-list">
                               <li class="rd-megamenu-list-item">
-                                <a class="rd-megamenu-list-link" href="#"
-                                  >Programme</a
+                                <a
+                                  class="rd-megamenu-list-link"
+                                  href="about.html"
+                                  >About</a
                                 >
                               </li>
                               <li class="rd-megamenu-list-item">
-                                <a class="rd-megamenu-list-link" href="#"
-                                  >Poster & Oral Session
+                                <a
+                                  class="rd-megamenu-list-link"
+                                  href="fees.html"
+                                  >Conference Fees
                                 </a>
-                              </li>
-                              <li class="rd-megamenu-list-item">
-                                <a class="rd-megamenu-list-link" href="#"
-                                  >Congress Venue and Accommodation</a
-                                >
-                              </li>
-                              <li class="rd-megamenu-list-item">
-                                <a class="rd-megamenu-list-link" href="#"
-                                  >Technical & Education Tour</a
-                                >
                               </li>
                             </ul>
                           </li>
                         </ul>
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#">Speakers</a>
+                        <a class="rd-nav-link" href="schedule.html"
+                          >Programme Schedule</a
+                        >
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="schedule.html">Schedule</a>
-                      </li>
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="pricing.html">Pricing</a>
-                      </li>
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#"
-                          >Highlights & Download
-                        </a>
+                        <a class="rd-nav-link" href="#">Publication </a>
                         <ul class="rd-menu rd-navbar-megamenu">
                           <li class="rd-megamenu-item">
                             <ul class="rd-megamenu-list">
@@ -183,6 +172,10 @@
                           </li>
                         </ul>
                       </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="#">Organizing Committee</a>
+                      </li>
+
                       <li class="rd-nav-item">
                         <a class="rd-nav-link" href="contact.html"
                           >Contact Us</a
@@ -232,7 +225,7 @@
                   data-toggle="tab"
                   data-triangle=".nav-link-overlay"
                   ><span class="nav-link-overlay"></span
-                  ><span class="nav-link-cite">First Day</span
+                  ><span class="nav-link-cite">Monday</span
                   ><span class="nav-link-title">August 7, 2023</span></a
                 >
               </li>
@@ -243,7 +236,7 @@
                   data-toggle="tab"
                   data-triangle=".nav-link-overlay"
                   ><span class="nav-link-overlay"></span
-                  ><span class="nav-link-cite">Second Day</span
+                  ><span class="nav-link-cite">Tuesday</span
                   ><span class="nav-link-title">August 8, 2023</span></a
                 >
               </li>
@@ -254,7 +247,7 @@
                   data-toggle="tab"
                   data-triangle=".nav-link-overlay"
                   ><span class="nav-link-overlay"></span
-                  ><span class="nav-link-cite">Third Day</span
+                  ><span class="nav-link-cite">Wednesday</span
                   ><span class="nav-link-title">August 9, 2023</span></a
                 >
               </li>
@@ -265,7 +258,7 @@
                   data-toggle="tab"
                   data-triangle=".nav-link-overlay"
                   ><span class="nav-link-overlay"></span
-                  ><span class="nav-link-cite">Fourth Day</span
+                  ><span class="nav-link-cite">Thursday</span
                   ><span class="nav-link-title">August 10, 2023</span></a
                 >
               </li>
@@ -276,20 +269,20 @@
                   data-toggle="tab"
                   data-triangle=".nav-link-overlay"
                   ><span class="nav-link-overlay"></span
-                  ><span class="nav-link-cite">Fifth Day</span
+                  ><span class="nav-link-cite">Friday</span
                   ><span class="nav-link-title">August 11, 2023</span></a
                 >
               </li>
             </ul>
             <!--Tab panes-->
             <div class="tab-content">
+              <!-- Tab 1 -->
               <div class="tab-pane fade" id="tabs-1-1">
                 <div
                   class="card-group-custom card-group-corporate"
                   id="accordion1"
                   role="tablist"
                   aria-multiselectable="false">
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
@@ -305,26 +298,13 @@
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-01-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >9:00 am to 10:00 am</span
+                                    >9:00 to 12:00 </span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Digital Conference 2023 Introduction</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Jessica Brown</span
-                                    >
-                                    - Co Founder</span
+                                    >Organizing Committee Meeting (OC)</span
                                   ></span
                                 ></span
                               ></span
@@ -333,42 +313,8 @@
                         >
                       </div>
                     </div>
-                    <div
-                      class="collapse"
-                      id="accordion1-card-body-trkolmxj"
-                      aria-labelledby="accordion1-card-head-hvrdmanx"
-                      data-parent="#accordion1"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Ubi est nobilis cobaltum? Domesticus capios ducunt ad
-                          demissio. Torquiss favere, tanquam bassus glos. Vae,
-                          hippotoxota! Superbus, mirabilis poetas vix aperto de
-                          teres, germanus amicitia. Vae. Fortis nixs ducunt ad
-                          acipenser. A falsis, musa nobilis gabalium. Cum decor
-                          ire, omnes fraticinidaes.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </article>
-                  <!--Bootstrap card-->
+
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
@@ -384,26 +330,13 @@
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-02-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >10:00 am to 11:00 am</span
+                                    >12:30 to 13:30</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Wordpress developement stages</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Mike Hardson</span
-                                    >
-                                    - Lead Developer</span
+                                    >OC + EC (Lunch 1)</span
                                   ></span
                                 ></span
                               ></span
@@ -412,42 +345,8 @@
                         >
                       </div>
                     </div>
-                    <div
-                      class="collapse"
-                      id="accordion1-card-body-tfxtpbsw"
-                      aria-labelledby="accordion1-card-head-svreblan"
-                      data-parent="#accordion1"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Est emeritis epos, cesaris. Competition de brevis
-                          zelus, imperium solem! Byssus prareres, tanquam dexter
-                          glos. Eheu, habena! Lotus monss ducunt ad idoleum.
-                          Castus fluctuss ducunt ad mineralis. A falsis,
-                          magister castus ignigena. Demolitiones cadunt in
-                          fortis avenio! Audax, raptus exsuls superbe.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </article>
-                  <!--Bootstrap card-->
+
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
@@ -463,26 +362,13 @@
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-03-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >11:00 am to 12:00 pm</span
+                                    >14:00 to 16:00 </span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Evolution of user interface in 2023</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Manager</span
-                                    >
-                                    - Co Founder</span
+                                    >ARAHE EC (EC) Meeting 1</span
                                   ></span
                                 ></span
                               ></span
@@ -491,88 +377,30 @@
                         >
                       </div>
                     </div>
-                    <div
-                      class="collapse"
-                      id="accordion1-card-body-bkdiuyjp"
-                      aria-labelledby="accordion1-card-head-ipxejyky"
-                      data-parent="#accordion1"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          There are many variations of passages of lorem ipsum
-                          available, but the majority have suffered alteration
-                          in some form, by injected humour or randomised words
-                          which don't look even slightly believable. If you are
-                          going to use a passage randomised words which don't
-                          look even slightly believable.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </article>
-                  <!-- Schedule Simple-->
-                  <!--Bootstrap card-->
+
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion1-card-head-vrlgurkk"
+                          id="accordion1-card-head-ipxejyky"
                           data-toggle="collapse"
                           data-parent="#accordion1"
-                          href="#accordion1-card-body-sltypcwy"
-                          aria-controls="accordion1-card-body-sltypcwy"
+                          href="#accordion1-card-body-bkdiuyjp"
+                          aria-controls="accordion1-card-body-bkdiuyjp"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-04-58x58.jpg"
-                                    alt=""
-                                    width="58"
-                                    height="58" /></span
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-05-58x58.jpg"
-                                    alt=""
-                                    width="58"
-                                    height="58" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >11:00 am to 12:00 pm</span
+                                    >16:00 to 16:30</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Digital Conference 2023 Introduction</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Kevin Martin</span
-                                    >
-                                    - Supporter&nbsp;&nbsp; .&nbsp;&nbsp;
-                                    <span class="schedule-classic-author-name"
-                                      >Sarah Rose</span
-                                    >
-                                    - Designer</span
+                                    >Tea Break 1</span
                                   ></span
                                 ></span
                               ></span
@@ -581,333 +409,165 @@
                         >
                       </div>
                     </div>
-                    <div
-                      class="collapse"
-                      id="accordion1-card-body-sltypcwy"
-                      aria-labelledby="accordion1-card-head-vrlgurkk"
-                      data-parent="#accordion1"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Fiscina domesticus lixa est. Cur vita mori? Triticum,
-                          heuretes, et nixus. Clabulare superbus abaculus est.
-                          Est lotus gemna, cesaris. Equisos mori! Uria moris,
-                          tanquam dexter cedrium. Hydras ridetis, tanquam
-                          bi-color saga. Pol, a bene tumultumque, castus nuptia!
-                          Noster, neuter stellas diligenter.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-ipxejyky"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-bkdiuyjp"
+                          aria-controls="accordion1-card-body-bkdiuyjp"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >16:30 to 18:30</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >ARAHE EC & Council Committee (CC)
+                                    Meeting</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
                       </div>
                     </div>
                   </article>
                 </div>
               </div>
+
+              <!-- Tab 2 -->
               <div class="tab-pane fade" id="tabs-1-2">
                 <div
                   class="card-group-custom card-group-corporate"
-                  id="accordion2"
+                  id="accordion1"
                   role="tablist"
                   aria-multiselectable="false">
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion2-card-head-yvlphcuj"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion2"
-                          href="#accordion2-card-body-bassthxq"
-                          aria-controls="accordion2-card-body-bassthxq"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-03-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >11:00 am to 12:00 pm</span
+                                    >8:00 to 8:30 </span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Evolution of user interface in 2023</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Manager</span
-                                    >
-                                    - Co Founder</span
+                                    >Breakfast</span
                                   ></span
                                 ></span
                               ></span
                             ></span
                           ></a
                         >
-                      </div>
-                    </div>
-                    <div
-                      class="collapse"
-                      id="accordion2-card-body-bassthxq"
-                      aria-labelledby="accordion2-card-head-yvlphcuj"
-                      data-parent="#accordion2"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          There are many variations of passages of lorem ipsum
-                          available, but the majority have suffered alteration
-                          in some form, by injected humour or randomised words
-                          which don't look even slightly believable. If you are
-                          going to use a passage randomised words which don't
-                          look even slightly believable.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </article>
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion2-card-head-wmovjulp"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion2"
-                          href="#accordion2-card-body-qxhqkvuq"
-                          aria-controls="accordion2-card-body-qxhqkvuq"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-02-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >10:00 am to 11:00 am</span
+                                    >8:30 to 09:30</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Wordpress developement stages</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Mike Hardson</span
-                                    >
-                                    - Lead Developer</span
+                                    >Registration</span
                                   ></span
                                 ></span
                               ></span
                             ></span
                           ></a
                         >
-                      </div>
-                    </div>
-                    <div
-                      class="collapse"
-                      id="accordion2-card-body-qxhqkvuq"
-                      aria-labelledby="accordion2-card-head-wmovjulp"
-                      data-parent="#accordion2"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Est emeritis epos, cesaris. Competition de brevis
-                          zelus, imperium solem! Byssus prareres, tanquam dexter
-                          glos. Eheu, habena! Lotus monss ducunt ad idoleum.
-                          Castus fluctuss ducunt ad mineralis. A falsis,
-                          magister castus ignigena. Demolitiones cadunt in
-                          fortis avenio! Audax, raptus exsuls superbe.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </article>
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion2-card-head-vpasowkb"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion2"
-                          href="#accordion2-card-body-cxtpulmb"
-                          aria-controls="accordion2-card-body-cxtpulmb"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-01-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >9:00 am to 10:00 am</span
+                                    >9:30 to 11:00</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Digital Conference 2023 Introduction</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Jessica Brown</span
-                                    >
-                                    - Co Founder</span
+                                    >Opening Ceremony</span
                                   ></span
                                 ></span
                               ></span
                             ></span
                           ></a
                         >
-                      </div>
-                    </div>
-                    <div
-                      class="collapse"
-                      id="accordion2-card-body-cxtpulmb"
-                      aria-labelledby="accordion2-card-head-vpasowkb"
-                      data-parent="#accordion2"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Ubi est nobilis cobaltum? Domesticus capios ducunt ad
-                          demissio. Torquiss favere, tanquam bassus glos. Vae,
-                          hippotoxota! Superbus, mirabilis poetas vix aperto de
-                          teres, germanus amicitia. Vae. Fortis nixs ducunt ad
-                          acipenser. A falsis, musa nobilis gabalium. Cum decor
-                          ire, omnes fraticinidaes.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </article>
-                  <!-- Schedule Simple-->
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion2-card-head-cswofari"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion2"
-                          href="#accordion2-card-body-puprvxdp"
-                          aria-controls="accordion2-card-body-puprvxdp"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-04-58x58.jpg"
-                                    alt=""
-                                    width="58"
-                                    height="58" /></span
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-05-58x58.jpg"
-                                    alt=""
-                                    width="58"
-                                    height="58" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >11:00 am to 12:00 pm</span
+                                    >11:00 to 11:30</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Digital Conference 2023 Introduction</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Kevin Martin</span
-                                    >
-                                    - Supporter&nbsp;&nbsp; .&nbsp;&nbsp;
-                                    <span class="schedule-classic-author-name"
-                                      >Sarah Rose</span
-                                    >
-                                    - Designer</span
+                                    >Tea Break 2</span
                                   ></span
                                 ></span
                               ></span
@@ -916,333 +576,260 @@
                         >
                       </div>
                     </div>
-                    <div
-                      class="collapse"
-                      id="accordion2-card-body-puprvxdp"
-                      aria-labelledby="accordion2-card-head-cswofari"
-                      data-parent="#accordion2"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Fiscina domesticus lixa est. Cur vita mori? Triticum,
-                          heuretes, et nixus. Clabulare superbus abaculus est.
-                          Est lotus gemna, cesaris. Equisos mori! Uria moris,
-                          tanquam dexter cedrium. Hydras ridetis, tanquam
-                          bi-color saga. Pol, a bene tumultumque, castus nuptia!
-                          Noster, neuter stellas diligenter.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-svreblan"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-tfxtpbsw"
+                          aria-controls="accordion1-card-body-tfxtpbsw"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >11:30 to 13:30</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >Keynote Speech 1</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-ipxejyky"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-bkdiuyjp"
+                          aria-controls="accordion1-card-body-bkdiuyjp"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >13:30 to 14:30</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >Lunch 2</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-ipxejyky"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-bkdiuyjp"
+                          aria-controls="accordion1-card-body-bkdiuyjp"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >14:30 to 17:00</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >Tea Break 1</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-ipxejyky"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-bkdiuyjp"
+                          aria-controls="accordion1-card-body-bkdiuyjp"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >17:30 to 19:00</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >* Welcome Cocktail Reception</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
                       </div>
                     </div>
                   </article>
                 </div>
               </div>
+
+              <!-- Tab 3 -->
               <div class="tab-pane fade" id="tabs-1-3">
                 <div
                   class="card-group-custom card-group-corporate"
-                  id="accordion3"
+                  id="accordion1"
                   role="tablist"
                   aria-multiselectable="false">
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion3-card-head-lologbje"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion3"
-                          href="#accordion3-card-body-cfvanvvv"
-                          aria-controls="accordion3-card-body-cfvanvvv"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-02-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >10:00 am to 11:00 am</span
+                                    >8:00 to 8:30 </span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Wordpress developement stages</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Mike Hardson</span
-                                    >
-                                    - Lead Developer</span
+                                    >Breakfast</span
                                   ></span
                                 ></span
                               ></span
                             ></span
                           ></a
                         >
-                      </div>
-                    </div>
-                    <div
-                      class="collapse"
-                      id="accordion3-card-body-cfvanvvv"
-                      aria-labelledby="accordion3-card-head-lologbje"
-                      data-parent="#accordion3"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Est emeritis epos, cesaris. Competition de brevis
-                          zelus, imperium solem! Byssus prareres, tanquam dexter
-                          glos. Eheu, habena! Lotus monss ducunt ad idoleum.
-                          Castus fluctuss ducunt ad mineralis. A falsis,
-                          magister castus ignigena. Demolitiones cadunt in
-                          fortis avenio! Audax, raptus exsuls superbe.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </article>
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion3-card-head-ovfiyifs"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion3"
-                          href="#accordion3-card-body-nwdquqtu"
-                          aria-controls="accordion3-card-body-nwdquqtu"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-03-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >11:00 am to 12:00 pm</span
+                                    >8:30 to 10:00</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Evolution of user interface in 2023</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Manager</span
-                                    >
-                                    - Co Founder</span
+                                    >Symposium 1</span
                                   ></span
                                 ></span
                               ></span
                             ></span
                           ></a
                         >
-                      </div>
-                    </div>
-                    <div
-                      class="collapse"
-                      id="accordion3-card-body-nwdquqtu"
-                      aria-labelledby="accordion3-card-head-ovfiyifs"
-                      data-parent="#accordion3"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          There are many variations of passages of lorem ipsum
-                          available, but the majority have suffered alteration
-                          in some form, by injected humour or randomised words
-                          which don't look even slightly believable. If you are
-                          going to use a passage randomised words which don't
-                          look even slightly believable.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </article>
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion3-card-head-odsfunri"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion3"
-                          href="#accordion3-card-body-rxjjlvmi"
-                          aria-controls="accordion3-card-body-rxjjlvmi"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-01-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >9:00 am to 10:00 am</span
+                                    >10:00 to 10:30</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Digital Conference 2023 Introduction</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Jessica Brown</span
-                                    >
-                                    - Co Founder</span
+                                    >Tea Break 3</span
                                   ></span
                                 ></span
                               ></span
                             ></span
                           ></a
                         >
-                      </div>
-                    </div>
-                    <div
-                      class="collapse"
-                      id="accordion3-card-body-rxjjlvmi"
-                      aria-labelledby="accordion3-card-head-odsfunri"
-                      data-parent="#accordion3"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Ubi est nobilis cobaltum? Domesticus capios ducunt ad
-                          demissio. Torquiss favere, tanquam bassus glos. Vae,
-                          hippotoxota! Superbus, mirabilis poetas vix aperto de
-                          teres, germanus amicitia. Vae. Fortis nixs ducunt ad
-                          acipenser. A falsis, musa nobilis gabalium. Cum decor
-                          ire, omnes fraticinidaes.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </article>
-                  <!-- Schedule Simple-->
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion3-card-head-vlcebkjy"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion3"
-                          href="#accordion3-card-body-imvwjrkg"
-                          aria-controls="accordion3-card-body-imvwjrkg"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-04-58x58.jpg"
-                                    alt=""
-                                    width="58"
-                                    height="58" /></span
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-05-58x58.jpg"
-                                    alt=""
-                                    width="58"
-                                    height="58" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >11:00 am to 12:00 pm</span
+                                    >10:30 to 13:00</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Digital Conference 2023 Introduction</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Kevin Martin</span
-                                    >
-                                    - Supporter&nbsp;&nbsp; .&nbsp;&nbsp;
-                                    <span class="schedule-classic-author-name"
-                                      >Sarah Rose</span
-                                    >
-                                    - Designer</span
+                                    >Symposium 2</span
                                   ></span
                                 ></span
                               ></span
@@ -1251,333 +838,240 @@
                         >
                       </div>
                     </div>
-                    <div
-                      class="collapse"
-                      id="accordion3-card-body-imvwjrkg"
-                      aria-labelledby="accordion3-card-head-vlcebkjy"
-                      data-parent="#accordion3"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Fiscina domesticus lixa est. Cur vita mori? Triticum,
-                          heuretes, et nixus. Clabulare superbus abaculus est.
-                          Est lotus gemna, cesaris. Equisos mori! Uria moris,
-                          tanquam dexter cedrium. Hydras ridetis, tanquam
-                          bi-color saga. Pol, a bene tumultumque, castus nuptia!
-                          Noster, neuter stellas diligenter.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-svreblan"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-tfxtpbsw"
+                          aria-controls="accordion1-card-body-tfxtpbsw"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >13:00 to 14:00</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >Lunch 3</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-ipxejyky"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-bkdiuyjp"
+                          aria-controls="accordion1-card-body-bkdiuyjp"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >14:00 to 17:00</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >ARAHE EC (EC) Meeting 2</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >Parallel Session : Oral Presentation 1 &
+                                    Poster Presentation 1</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-ipxejyky"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-bkdiuyjp"
+                          aria-controls="accordion1-card-body-bkdiuyjp"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >17:00 to 17:30</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >Tea Break 4</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
                       </div>
                     </div>
                   </article>
                 </div>
               </div>
+
+              <!-- Tab 4 -->
               <div class="tab-pane fade" id="tabs-1-4">
                 <div
                   class="card-group-custom card-group-corporate"
-                  id="accordion4"
+                  id="accordion1"
                   role="tablist"
                   aria-multiselectable="false">
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion4-card-head-pjouyugs"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion4"
-                          href="#accordion4-card-body-febobtkg"
-                          aria-controls="accordion4-card-body-febobtkg"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-01-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >9:00 am to 10:00 am</span
+                                    >8:00 to 8:30 </span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Digital Conference 2023 Introduction</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Jessica Brown</span
-                                    >
-                                    - Co Founder</span
+                                    >Breakfast</span
                                   ></span
                                 ></span
                               ></span
                             ></span
                           ></a
                         >
-                      </div>
-                    </div>
-                    <div
-                      class="collapse"
-                      id="accordion4-card-body-febobtkg"
-                      aria-labelledby="accordion4-card-head-pjouyugs"
-                      data-parent="#accordion4"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Ubi est nobilis cobaltum? Domesticus capios ducunt ad
-                          demissio. Torquiss favere, tanquam bassus glos. Vae,
-                          hippotoxota! Superbus, mirabilis poetas vix aperto de
-                          teres, germanus amicitia. Vae. Fortis nixs ducunt ad
-                          acipenser. A falsis, musa nobilis gabalium. Cum decor
-                          ire, omnes fraticinidaes.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </article>
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion4-card-head-dbefhxvb"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion4"
-                          href="#accordion4-card-body-wwoueixf"
-                          aria-controls="accordion4-card-body-wwoueixf"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-03-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >11:00 am to 12:00 pm</span
+                                    >8:30 to 10:00</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Evolution of user interface in 2023</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Manager</span
-                                    >
-                                    - Co Founder</span
+                                    >ARAHE EC (EC) Meeting 3</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >Parallel Session : Oral Presentation 2 &
+                                    Poster Presentation 2</span
                                   ></span
                                 ></span
                               ></span
                             ></span
                           ></a
                         >
-                      </div>
-                    </div>
-                    <div
-                      class="collapse"
-                      id="accordion4-card-body-wwoueixf"
-                      aria-labelledby="accordion4-card-head-dbefhxvb"
-                      data-parent="#accordion4"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          There are many variations of passages of lorem ipsum
-                          available, but the majority have suffered alteration
-                          in some form, by injected humour or randomised words
-                          which don't look even slightly believable. If you are
-                          going to use a passage randomised words which don't
-                          look even slightly believable.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </article>
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion4-card-head-kiythsuo"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion4"
-                          href="#accordion4-card-body-wrocqbhp"
-                          aria-controls="accordion4-card-body-wrocqbhp"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-02-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >10:00 am to 11:00 am</span
+                                    >10:00 to 10:30</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Wordpress developement stages</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Mike Hardson</span
-                                    >
-                                    - Lead Developer</span
+                                    >Tea Break 5</span
                                   ></span
                                 ></span
                               ></span
                             ></span
                           ></a
                         >
-                      </div>
-                    </div>
-                    <div
-                      class="collapse"
-                      id="accordion4-card-body-wrocqbhp"
-                      aria-labelledby="accordion4-card-head-kiythsuo"
-                      data-parent="#accordion4"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Est emeritis epos, cesaris. Competition de brevis
-                          zelus, imperium solem! Byssus prareres, tanquam dexter
-                          glos. Eheu, habena! Lotus monss ducunt ad idoleum.
-                          Castus fluctuss ducunt ad mineralis. A falsis,
-                          magister castus ignigena. Demolitiones cadunt in
-                          fortis avenio! Audax, raptus exsuls superbe.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </article>
-                  <!-- Schedule Simple-->
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion4-card-head-rufyhcjx"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion4"
-                          href="#accordion4-card-body-setufihd"
-                          aria-controls="accordion4-card-body-setufihd"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-04-58x58.jpg"
-                                    alt=""
-                                    width="58"
-                                    height="58" /></span
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-05-58x58.jpg"
-                                    alt=""
-                                    width="58"
-                                    height="58" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >11:00 am to 12:00 pm</span
+                                    >10:30 to 13:00</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Digital Conference 2023 Introduction</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Kevin Martin</span
-                                    >
-                                    - Supporter&nbsp;&nbsp; .&nbsp;&nbsp;
-                                    <span class="schedule-classic-author-name"
-                                      >Sarah Rose</span
-                                    >
-                                    - Designer</span
+                                    >ARAHE EC (EC) Meeting 4</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >Parallel Session : Oral Presentation 3 &
+                                    Poster Presentation 3</span
                                   ></span
                                 ></span
                               ></span
@@ -1586,333 +1080,232 @@
                         >
                       </div>
                     </div>
-                    <div
-                      class="collapse"
-                      id="accordion4-card-body-setufihd"
-                      aria-labelledby="accordion4-card-head-rufyhcjx"
-                      data-parent="#accordion4"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Fiscina domesticus lixa est. Cur vita mori? Triticum,
-                          heuretes, et nixus. Clabulare superbus abaculus est.
-                          Est lotus gemna, cesaris. Equisos mori! Uria moris,
-                          tanquam dexter cedrium. Hydras ridetis, tanquam
-                          bi-color saga. Pol, a bene tumultumque, castus nuptia!
-                          Noster, neuter stellas diligenter.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-svreblan"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-tfxtpbsw"
+                          aria-controls="accordion1-card-body-tfxtpbsw"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >13:00 to 14:00</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >Lunch 4</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-ipxejyky"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-bkdiuyjp"
+                          aria-controls="accordion1-card-body-bkdiuyjp"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >14:00 to 17:00</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >- Technical Tour</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >- Academic Visits</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-ipxejyky"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-bkdiuyjp"
+                          aria-controls="accordion1-card-body-bkdiuyjp"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >17:00 to 17:30</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >Tea Break 6</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
                       </div>
                     </div>
                   </article>
                 </div>
               </div>
+
+              <!-- Tab 5 -->
               <div class="tab-pane fade" id="tabs-1-5">
                 <div
                   class="card-group-custom card-group-corporate"
-                  id="accordion2"
+                  id="accordion1"
                   role="tablist"
                   aria-multiselectable="false">
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion2-card-head-yvlphcuj"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion2"
-                          href="#accordion2-card-body-bassthxq"
-                          aria-controls="accordion2-card-body-bassthxq"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-03-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >11:00 am to 12:00 pm</span
+                                    >8:00 to 8:30 </span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Evolution of user interface in 2023</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Manager</span
-                                    >
-                                    - Co Founder</span
+                                    >Breakfast</span
                                   ></span
                                 ></span
                               ></span
                             ></span
                           ></a
                         >
-                      </div>
-                    </div>
-                    <div
-                      class="collapse"
-                      id="accordion2-card-body-bassthxq"
-                      aria-labelledby="accordion2-card-head-yvlphcuj"
-                      data-parent="#accordion2"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          There are many variations of passages of lorem ipsum
-                          available, but the majority have suffered alteration
-                          in some form, by injected humour or randomised words
-                          which don't look even slightly believable. If you are
-                          going to use a passage randomised words which don't
-                          look even slightly believable.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </article>
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion2-card-head-wmovjulp"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion2"
-                          href="#accordion2-card-body-qxhqkvuq"
-                          aria-controls="accordion2-card-body-qxhqkvuq"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-02-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >10:00 am to 11:00 am</span
+                                    >8:30 to 10:00</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Wordpress developement stages</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Mike Hardson</span
-                                    >
-                                    - Lead Developer</span
+                                    >Country Presentation 1</span
                                   ></span
                                 ></span
                               ></span
                             ></span
                           ></a
                         >
-                      </div>
-                    </div>
-                    <div
-                      class="collapse"
-                      id="accordion2-card-body-qxhqkvuq"
-                      aria-labelledby="accordion2-card-head-wmovjulp"
-                      data-parent="#accordion2"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Est emeritis epos, cesaris. Competition de brevis
-                          zelus, imperium solem! Byssus prareres, tanquam dexter
-                          glos. Eheu, habena! Lotus monss ducunt ad idoleum.
-                          Castus fluctuss ducunt ad mineralis. A falsis,
-                          magister castus ignigena. Demolitiones cadunt in
-                          fortis avenio! Audax, raptus exsuls superbe.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </article>
-                  <!--Bootstrap card-->
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion2-card-head-vpasowkb"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion2"
-                          href="#accordion2-card-body-cxtpulmb"
-                          aria-controls="accordion2-card-body-cxtpulmb"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-01-122x122.jpg"
-                                    alt=""
-                                    width="122"
-                                    height="122" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >9:00 am to 10:00 am</span
+                                    >10:00 to 10:30</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Digital Conference 2023 Introduction</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Jessica Brown</span
-                                    >
-                                    - Co Founder</span
+                                    >Tea Break 7</span
                                   ></span
                                 ></span
                               ></span
                             ></span
                           ></a
                         >
-                      </div>
-                    </div>
-                    <div
-                      class="collapse"
-                      id="accordion2-card-body-cxtpulmb"
-                      aria-labelledby="accordion2-card-head-vpasowkb"
-                      data-parent="#accordion2"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Ubi est nobilis cobaltum? Domesticus capios ducunt ad
-                          demissio. Torquiss favere, tanquam bassus glos. Vae,
-                          hippotoxota! Superbus, mirabilis poetas vix aperto de
-                          teres, germanus amicitia. Vae. Fortis nixs ducunt ad
-                          acipenser. A falsis, musa nobilis gabalium. Cum decor
-                          ire, omnes fraticinidaes.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </article>
-                  <!-- Schedule Simple-->
-                  <!--Bootstrap card-->
+
                   <article class="card card-custom card-corporate">
                     <div class="card-header" role="tab">
                       <div class="card-title">
                         <a
                           class="collapsed"
-                          id="accordion2-card-head-cswofari"
+                          id="accordion1-card-head-hvrdmanx"
                           data-toggle="collapse"
-                          data-parent="#accordion2"
-                          href="#accordion2-card-body-puprvxdp"
-                          aria-controls="accordion2-card-body-puprvxdp"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
                           aria-expanded="false"
                           role="button"
                           ><span class="schedule-classic"
                             ><span
                               class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                              ><span class="unit-left"
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-04-58x58.jpg"
-                                    alt=""
-                                    width="58"
-                                    height="58" /></span
-                                ><span class="schedule-classic-img"
-                                  ><img
-                                    src="images/schedule-05-58x58.jpg"
-                                    alt=""
-                                    width="58"
-                                    height="58" /></span></span
                               ><span class="unit-body"
                                 ><span class="schedule-classic-content"
                                   ><span class="schedule-classic-time"
-                                    >11:00 am to 12:00 pm</span
+                                    >10:30 to 11:30</span
                                   ><span
                                     class="schedule-classic-title heading-4"
-                                    >Digital Conference 2023 Introduction</span
-                                  ><span class="schedule-classic-author"
-                                    >by
-                                    <span class="schedule-classic-author-name"
-                                      >Kevin Martin</span
-                                    >
-                                    - Supporter&nbsp;&nbsp; .&nbsp;&nbsp;
-                                    <span class="schedule-classic-author-name"
-                                      >Sarah Rose</span
-                                    >
-                                    - Designer</span
+                                    >Country Presentation 2</span
                                   ></span
                                 ></span
                               ></span
@@ -1921,38 +1314,102 @@
                         >
                       </div>
                     </div>
-                    <div
-                      class="collapse"
-                      id="accordion2-card-body-puprvxdp"
-                      aria-labelledby="accordion2-card-head-cswofari"
-                      data-parent="#accordion2"
-                      role="tabpanel">
-                      <div class="card-body">
-                        <p>
-                          Fiscina domesticus lixa est. Cur vita mori? Triticum,
-                          heuretes, et nixus. Clabulare superbus abaculus est.
-                          Est lotus gemna, cesaris. Equisos mori! Uria moris,
-                          tanquam dexter cedrium. Hydras ridetis, tanquam
-                          bi-color saga. Pol, a bene tumultumque, castus nuptia!
-                          Noster, neuter stellas diligenter.
-                        </p>
-                        <div class="unit unit-spacing-xxs">
-                          <div class="unit-left">
-                            <svg
-                              class="svg-icon-sm svg-icon-primary"
-                              role="img">
-                              <use
-                                xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                            </svg>
-                          </div>
-                          <div class="unit-body">
-                            <h5>Where</h5>
-                            <p class="font-secondary">
-                              Hall 22, Building 2, New York, United States of
-                              America
-                            </p>
-                          </div>
-                        </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-hvrdmanx"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-trkolmxj"
+                          aria-controls="accordion1-card-body-trkolmxj"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >11:30 to 13:00</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >ARAHE 21<sup>st</sup> General Assembly and
+                                    Closing Ceremony</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-svreblan"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-tfxtpbsw"
+                          aria-controls="accordion1-card-body-tfxtpbsw"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >13:00 to 14:30</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >* ARAHE Farewell Lunch</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="card card-custom card-corporate">
+                    <div class="card-header" role="tab">
+                      <div class="card-title">
+                        <a
+                          class="collapsed"
+                          id="accordion1-card-head-ipxejyky"
+                          data-toggle="collapse"
+                          data-parent="#accordion1"
+                          href="#accordion1-card-body-bkdiuyjp"
+                          aria-controls="accordion1-card-body-bkdiuyjp"
+                          aria-expanded="false"
+                          role="button"
+                          ><span class="schedule-classic"
+                            ><span
+                              class="unit unit-spacing-md align-items-center d-block d-md-flex"
+                              ><span class="unit-body"
+                                ><span class="schedule-classic-content"
+                                  ><span class="schedule-classic-time"
+                                    >14:30 to 19:00</span
+                                  ><span
+                                    class="schedule-classic-title heading-4"
+                                    >Check out and Safe Journey OR Exploring
+                                    Places of Interest in Malaysia</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        >
                       </div>
                     </div>
                   </article>
@@ -1962,6 +1419,7 @@
           </div>
         </div>
       </section>
+
       <!-- Section Pre Footer-->
       <section class="section section-lg bg-gray-900">
         <div class="container">
@@ -1972,7 +1430,7 @@
                   class="brand-logo-light"
                   src="images/logo-inverse-big.png"
                   srcset="images/logo-inverse-big@2x.png 2x"
-                  alt="Voelas"
+                  alt="arahe2023"
               /></a>
             </div>
             <div class="col-xs-10 col-sm-6 col-lg-4">
@@ -2046,7 +1504,7 @@
           <p class="rights">
             <span>Copyright&nbsp;</span><span>&copy;&nbsp;</span
             ><span class="copyright-year"></span><span>&nbsp;</span
-            ><span>by</span> <a href="http://bit.ly/dan-fisher">MAHE</a>
+            ><span>by</span> <a href="mahe.org.my">mahe.org.my</a>
           </p>
         </div>
       </footer>

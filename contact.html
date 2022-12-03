@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html class="wide" lang="en">
+<html class="wide" lang="en" manifest="cache.manifest">
   <head>
-    <title>Contact</title>
+    <title>ARAHE2023</title>
+    <script type="text/javascript" src="update_cache.js"></script>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -32,7 +33,7 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="checkForUpdate()">
     <div class="ie-panel">
       <a href="http://windows.microsoft.com/en-US/internet-explorer/"
         ><img
@@ -111,47 +112,35 @@
                         <a class="rd-nav-link" href="index.html">Home</a>
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#">Pages</a>
+                        <a class="rd-nav-link" href="#">Conference</a>
                         <ul class="rd-menu rd-navbar-megamenu">
                           <li class="rd-megamenu-item">
                             <ul class="rd-megamenu-list">
                               <li class="rd-megamenu-list-item">
-                                <a class="rd-megamenu-list-link" href="#"
-                                  >Programme</a
+                                <a
+                                  class="rd-megamenu-list-link"
+                                  href="about.html"
+                                  >About</a
                                 >
                               </li>
                               <li class="rd-megamenu-list-item">
-                                <a class="rd-megamenu-list-link" href="#"
-                                  >Poster & Oral Session
+                                <a
+                                  class="rd-megamenu-list-link"
+                                  href="fees.html"
+                                  >Conference Fees
                                 </a>
-                              </li>
-                              <li class="rd-megamenu-list-item">
-                                <a class="rd-megamenu-list-link" href="#"
-                                  >Congress Venue and Accommodation</a
-                                >
-                              </li>
-                              <li class="rd-megamenu-list-item">
-                                <a class="rd-megamenu-list-link" href="#"
-                                  >Technical & Education Tour</a
-                                >
                               </li>
                             </ul>
                           </li>
                         </ul>
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#">Speakers</a>
+                        <a class="rd-nav-link" href="schedule.html"
+                          >Programme Schedule</a
+                        >
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="schedule.html">Schedule</a>
-                      </li>
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="pricing.html">Pricing</a>
-                      </li>
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#"
-                          >Highlights & Download
-                        </a>
+                        <a class="rd-nav-link" href="#">Publication </a>
                         <ul class="rd-menu rd-navbar-megamenu">
                           <li class="rd-megamenu-item">
                             <ul class="rd-megamenu-list">
@@ -183,6 +172,10 @@
                           </li>
                         </ul>
                       </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="#">Organizing Committee</a>
+                      </li>
+
                       <li class="rd-nav-item">
                         <a class="rd-nav-link" href="contact.html"
                           >Contact Us</a
@@ -357,6 +350,7 @@
           </div>
         </div>
       </section>
+
       <!-- Section Pre Footer-->
       <section class="section section-lg bg-gray-900">
         <div class="container">
@@ -367,7 +361,7 @@
                   class="brand-logo-light"
                   src="images/logo-inverse-big.png"
                   srcset="images/logo-inverse-big@2x.png 2x"
-                  alt="Voelas"
+                  alt="arahe2023"
               /></a>
             </div>
             <div class="col-xs-10 col-sm-6 col-lg-4">
@@ -441,7 +435,7 @@
           <p class="rights">
             <span>Copyright&nbsp;</span><span>&copy;&nbsp;</span
             ><span class="copyright-year"></span><span>&nbsp;</span
-            ><span>by</span> <a href="http://bit.ly/dan-fisher">MAHE</a>
+            ><span>by</span> <a href="mahe.org.my">mahe.org.my</a>
           </p>
         </div>
       </footer>
